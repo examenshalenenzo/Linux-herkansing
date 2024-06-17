@@ -1,0 +1,16 @@
+cd /home
+
+zypper install apache2
+
+systemctl start apache2.service
+systemctl status apache2.service
+
+systemctl stop firewalld.service
+
+cd /srv/www/
+mkdir vhosts
+cd vhosts/
+mkdir website1
+mkdir website2
+
+tree
